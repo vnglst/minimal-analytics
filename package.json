@@ -1,29 +1,39 @@
 {
   "name": "minimal-analytics",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Minimal Google Analytics",
-  "main": "src/index.js",
+  "main": "dist/minimal-analytics.js",
+  "module": "dist/minimal-analytics.mjs",
+  "umd:main": "dist/minimal-analytics.umd.js",
+  "source": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 0"
+    "test": "npm run build",
+    "clean": "rm -f dist/*",
+    "size": "bundlewatch",
+    "build": "npm run clean && microbundle --entry src/index.js --sourcemap true",
+    "prepublish": "npm run build",
+    "publish": "np"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vnglst/minimal-analytics.git"
   },
   "author": "Koen van Gilst <koen@koenvangilst.nl> (https://koenvangilst.nl)",
   "license": "MIT",
-  "devDependencies": {
-    "@pika/plugin-build-node": "^0.3.14",
-    "@pika/plugin-build-web": "^0.3.14",
-    "@pika/plugin-standard-pkg": "^0.3.14"
+  "dependencies": {
+    "np": "^4.0.2"
   },
-  "@pika/pack": {
-    "pipeline": [
-      [
-        "@pika/plugin-standard-pkg"
-      ],
-      [
-        "@pika/plugin-build-node"
-      ],
-      [
-        "@pika/plugin-build-web"
-      ]
+  "devDependencies": {
+    "bundlewatch": "^0.2.1",
+    "gzip-size-cli": "^3.0.0",
+    "microbundle": "^0.9.0"
+  },
+  "bundlewatch": {
+    "files": [
+      {
+        "path": "dist/*.js",
+        "maxSize": "1kB"
+      }
     ]
   }
 }
