@@ -20,10 +20,9 @@
   },
   "author": "Koen van Gilst <koen@koenvangilst.nl> (https://koenvangilst.nl)",
   "license": "MIT",
-  "dependencies": {
-    "np": "^4.0.2"
-  },
+  "dependencies": {},
   "devDependencies": {
+    "np": "^4.0.2",
     "bundlewatch": "^0.2.1",
     "gzip-size-cli": "^3.0.0",
     "microbundle": "^0.9.0"
