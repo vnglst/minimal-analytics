@@ -1,6 +1,6 @@
 {
   "name": "minimal-analytics",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Minimal Google Analytics",
   "main": "dist/minimal-analytics.js",
   "module": "dist/minimal-analytics.mjs",
@@ -12,7 +12,7 @@
     "size": "bundlewatch",
     "build": "npm run clean && microbundle --entry src/index.js --sourcemap true",
     "prepublish": "npm run build",
-    "publish": "np"
+    "np": "np"
   },
   "repository": {
     "type": "git",
