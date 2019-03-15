@@ -1,6 +1,6 @@
 {
   "name": "minimal-analytics",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Minimal Google Analytics",
   "main": "dist/minimal-analytics.js",
   "module": "dist/minimal-analytics.mjs",
@@ -11,8 +11,7 @@
     "clean": "rm -f dist/*",
     "size": "bundlewatch",
     "build": "npm run clean && microbundle --entry src/index.js --sourcemap true",
-    "prepublish": "npm run build",
-    "np": "np"
+    "release": "np"
   },
   "repository": {
     "type": "git",
@@ -22,10 +21,10 @@
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
-    "np": "^4.0.2",
     "bundlewatch": "^0.2.1",
     "gzip-size-cli": "^3.0.0",
-    "microbundle": "^0.9.0"
+    "microbundle": "^0.9.0",
+    "np": "^4.0.2"
   },
   "bundlewatch": {
     "files": [
