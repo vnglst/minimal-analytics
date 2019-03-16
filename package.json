@@ -3,14 +3,16 @@
   "version": "0.1.11",
   "description": "Minimal Google Analytics",
   "main": "dist/minimal-analytics.js",
-  "types": "dist/index.d.ts",
   "module": "dist/minimal-analytics.mjs",
   "umd:main": "dist/minimal-analytics.umd.js",
+  "types": "dist/index.d.ts",
   "source": "src/index.js",
   "scripts": {
     "test": "npm run build",
     "clean": "rm -f dist/*",
     "size": "bundlewatch",
+    "start": "npm run clean && microbundle --entry src/index.js --sourcemap true --watch",
+    "prepublish": "cp src/index.d.ts dist/",
     "build": "npm run clean && microbundle --entry src/index.js --sourcemap true",
     "release": "np"
   },
