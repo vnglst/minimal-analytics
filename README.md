@@ -1,8 +1,8 @@
-# Minimal Google Analytics Snippet
+# Minimal Google Analytics
 
-Minimal analytics is a Google Analytics replacement created by [David Künnen](https://davidkunnen.com/) and this is an npm package of that code snippet. It also has TypeScript typings.
+Minimal analytics is a Google Analytics replacement created by [David Künnen](https://davidkunnen.com/). This is an npm package of that code snippet.
 
-I created this package for use in personal projects, feel free to do the same. PR's with improvements are welcome.
+I created this package for use in my personal projects. Feel free to do the same, PR's with improvements are welcome.
 
 Description, see project page: https://minimalanalytics.com/
 
