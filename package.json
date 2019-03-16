@@ -5,7 +5,7 @@
   "main": "dist/minimal-analytics.js",
   "module": "dist/minimal-analytics.mjs",
   "umd:main": "dist/minimal-analytics.umd.js",
-  "types": "dist/index.d.ts",
+  "types": "dist/minimal-analytics.d.ts",
   "source": "src/index.js",
   "scripts": {
     "test": "npm run build",
