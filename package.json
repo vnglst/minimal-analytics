@@ -1,6 +1,6 @@
 {
   "name": "minimal-analytics",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "description": "Minimal Google Analytics",
   "main": "dist/minimal-analytics.js",
   "types": "dist/index.d.ts",
