@@ -12,7 +12,7 @@
     "clean": "rm -f dist/*",
     "size": "bundlewatch",
     "start": "npm run clean && microbundle --entry src/index.js --sourcemap true --watch",
-    "prepublish": "cp src/index.d.ts dist/",
+    "prepublish": "cp src/index.d.ts dist/minimal-analytics.d.ts",
     "build": "npm run clean && microbundle --entry src/index.js --sourcemap true",
     "release": "np"
   },
