@@ -3,6 +3,7 @@
   "version": "0.1.10",
   "description": "Minimal Google Analytics",
   "main": "dist/minimal-analytics.js",
+  "types": "dist/index.d.ts",
   "module": "dist/minimal-analytics.mjs",
   "umd:main": "dist/minimal-analytics.umd.js",
   "source": "src/index.js",
