@@ -1,6 +1,6 @@
 {
   "name": "minimal-analytics",
-  "version": "0.1.16",
+  "version": "1.0.0-0",
   "description": "Minimal Google Analytics",
   "main": "dist/minimal-analytics.js",
   "module": "dist/minimal-analytics.mjs",
