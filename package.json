@@ -22,12 +22,11 @@
   },
   "author": "Koen van Gilst <koen@koenvangilst.nl> (https://koenvangilst.nl)",
   "license": "MIT",
-  "dependencies": {},
   "devDependencies": {
-    "bundlewatch": "^0.2.1",
+    "bundlewatch": "^0.2.7",
     "gzip-size-cli": "^3.0.0",
-    "microbundle": "^0.9.0",
-    "np": "^4.0.2"
+    "microbundle": "^0.12.3",
+    "np": "^6.3.2"
   },
   "bundlewatch": {
     "files": [
